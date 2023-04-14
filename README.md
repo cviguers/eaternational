@@ -1,2 +1,2 @@
-# shiny-telegram
+# Eaternational
 Project 2
