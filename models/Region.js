@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Continent extends Model {}
+class Region extends Model {}
 
-Continent.init(
+Region.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -20,8 +20,8 @@ Continent.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'continent'
+    modelName: 'region'
   }
 );
 
-module.exports = Continent;
+module.exports = Region;
