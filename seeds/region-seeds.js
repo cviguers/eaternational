@@ -2,7 +2,7 @@ const { Region } = require('../models');
 
 const regionData = [
   {
-    name: 'South America',
+    name: 'Latin America',
   },
   {
     name: 'Asia',
