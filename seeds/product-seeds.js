@@ -190,11 +190,11 @@ const productData = [
     region_id: 4,
   },
   {
-    name: '',
-    price: ,
+    name: 'Foudina Maise Snack',
+    price: 1.29,
     stock: 35,
-    origin_country: '',
-    description: '',
+    origin_country: 'Greece',
+    description: 'Peanuts and hazelnuts in a crunchy corn coating',
     region_id: 4,
   },
   {
