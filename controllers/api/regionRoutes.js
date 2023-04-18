@@ -23,12 +23,12 @@ router.post('/', withAuth, async (req, res) => {
 });
 
 // read entire region table
-router.get('/', withAuth, async (req, res) => {
+router.get('/', async (req, res) => {
   try {
     // call sequelize to find all regions and store variables
     const regionData = await Region.findAll();
     // return data in json
-    res.status(200).json(newRegion);
+    res.status(200).json(regionData);
     // if err throw err
   } catch (err) {
     console.log(err);
@@ -37,12 +37,12 @@ router.get('/', withAuth, async (req, res) => {
 });
 
 // read region table by id
-router.get('/:id', withAuth, async (req, res) => {
+router.get('/:id', async (req, res) => {
   try {
     // call sequelize to find region by primary key id and store variable
     const regionData = await Region.findByPk(req.params.id);
     // return data in json
-    res.status(200).json(newRegion);
+    res.status(200).json(regionData);
     // if err throw err
   } catch (err) {
     console.log(err);
@@ -51,7 +51,7 @@ router.get('/:id', withAuth, async (req, res) => {
 });
 
 // update new region in region table
-router.put('/:id', withAuth, async (req, res) => {
+router.put('/:id', async (req, res) => {
   try {
     // call sequelize to update based upon what is in the region body
     const regionData = await Region.update(
@@ -66,7 +66,7 @@ router.put('/:id', withAuth, async (req, res) => {
       }
     );
     // return created product in json
-    res.status(200).json(newRegion);
+    res.status(200).json(regionData);
     // if err throw err
   } catch (err) {
     console.log(err);
@@ -81,10 +81,11 @@ router.delete('/:id', withAuth, async (req, res) => {
     const regionData = await Region.destroy({
       where: {
         id: req.params.id,
+        user_id: req.session.user_id,
       },
     });
     // return confirmation that row was deleted
-    res.status(200).json(newRegion);
+    res.status(200).json(regionData);
     // if err throw err
   } catch (err) {
     console.log(err);

@@ -22,7 +22,7 @@ router.post('/', withAuth, async (req, res) => {
 });
 
 // read entire product table
-router.get('/', withAuth, async (req, res) => {
+router.get('/', async (req, res) => {
   try {
     // call sequelize to find all products and store variables
     const productData = await Product.findAll();
@@ -36,7 +36,7 @@ router.get('/', withAuth, async (req, res) => {
 });
 
 // read product table by id
-router.get('/:id', withAuth, async (req, res) => {
+router.get('/:id', async (req, res) => {
   try {
     // call sequelize to find product by primary key id and store variable
     const productData = await Product.findByPk(req.params.id);
@@ -50,7 +50,7 @@ router.get('/:id', withAuth, async (req, res) => {
 });
 
 // update product in product table
-router.put('/:id', withAuth, async (req, res) => {
+router.put('/:id', async (req, res) => {
   try {
     // call sequelize to update based upon what is in the product body
     const productData = await Product.update(
