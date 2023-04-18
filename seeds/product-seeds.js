@@ -8,7 +8,15 @@ const productData = [
     stock: 50,
     origin_country: 'Dominican Republic',
     description: 'A coconut and caramel flavored lollipop wrapped in colorful cellophane',
-    continent_id: 1,
+    region_id: 1,
+  },
+  {
+    name: 'Dori Amendoim',
+    price: 2.99,
+    stock: 45,
+    origin_country: 'Dominican Republic',
+    description: 'Candy coated peanuts',
+    region_id: 1,
   },
   {
     name: 'Galak',
@@ -16,7 +24,7 @@ const productData = [
     stock: 25,
     origin_country: 'Ecuador',
     description: 'These white chocolate bars are famous for their milky, melt in your mouth quality.',
-    continent_id: 1,
+    region_id: 1,
   },
   {
     name: 'Ajonjoli',
@@ -24,7 +32,7 @@ const productData = [
     stock: 20,
     origin_country: 'Puerto Rico',
     description: 'Imagine a mild and crunchy combination of sesame seeds and honey taking over your mouth and youll understand why these Puerto Rican snack bites are so popular.',
-    continent_id: 1,
+    region_id: 1,
   },
   {
     name: 'Galletas Doña Pepa',
@@ -32,7 +40,7 @@ const productData = [
     stock: 30,
     origin_country: 'Peru',
     description: 'These simple vanilla cookies with a chocolate coating were created in tribute to the classic ~turrón de Doña Pepa~, a beloved pastry that has found its match in these less complicated, but crazy addictive treats! ',
-    continent_id: 1,
+    region_id: 1,
   },
   // asia
   {
@@ -41,7 +49,7 @@ const productData = [
     stock: 40,
     origin_country: 'India',
     description: 'Think Doritos... but tikka masala flavored',
-    continent_id: 2,
+    region_id: 2,
   },
   {
     name: 'Chicken Larb Flavored Seaweed Chips',
@@ -49,7 +57,7 @@ const productData = [
     stock: 15,
     origin_country: 'Thailand',
     description: 'Crisp Thai seaweed with spicy chicken flavor.',
-    continent_id: 2,
+    region_id: 2,
   },
   {
     name: 'Mokomoko Mokolet Candy Toilet',
@@ -57,7 +65,7 @@ const productData = [
     stock: 20,
     origin_country: 'Japan',
     description: ' Have you ever woke up one day and thought to yourself, what if I could eat a flavored candy or something out of a colorful toilet bowl?  Well somebody in Japan did, and it is a hit!',
-    continent_id: 2,
+    region_id: 2,
   },
   {
     name: 'Wasabi Kit Kats',
@@ -65,16 +73,24 @@ const productData = [
     stock: 45,
     origin_country: 'China',
     description: ' No that iss not the green tea that are becoming more and more popular. That is wasabi flavored, and it taste awesome. ',
-    continent_id: 2,
+    region_id: 2,
   },
   // africa
+  {
+    name: 'Original Squash Orange Juice',
+    price: 2.00,
+    stock: 64,
+    origin_country: 'South Africa',
+    description: 'Juice from sweet orange, with lemon juice, sugar and water',
+    region_id: 3,
+  },
   {
     name: 'Plantain Crunchy Chips',
     price: 4.00,
     stock: 64,
     origin_country: 'Nigeria',
     description: 'Crispy, chewy, crunchy plantains in a convenient bag',
-    continent_id: 3,
+    region_id: 3,
   },
   {
     name: 'Fizzer Cream Soda Candy',
@@ -82,7 +98,7 @@ const productData = [
     stock: 43,
     origin_country: 'South Africa',
     description: 'South Africas original fruity, chewy and fizzy candy',
-    continent_id: 3,
+    region_id: 3,
   },
   {
     name: 'Winegums',
@@ -90,23 +106,39 @@ const productData = [
     stock: 54,
     origin_country: 'South Africa',
     description: 'These delicious and tempting reimaginings of a genuine classic are sure to delight anyone with a sweet tooth. ',
-    continent_id: 3,
+    region_id: 3,
   },
   {
-    name: '',
-    price: ,
+    name: 'Chevda Mix',
+    price: 4.99,
     stock: 56,
-    origin_country: '',
-    description: '',
-    continent_id: 3,
+    origin_country: 'Kenya',
+    description: 'A savory treat for anyone, potatoe chips mixed with lentils and peanuts',
+    region_id: 3,
   },
   {
-    name: '',
-    price: ,
+    name: 'Chutney Chips',
+    price: 4.25,
     stock: 47,
-    origin_country: '',
-    description: '',
-    continent_id: 3,
+    origin_country: 'South Africa',
+    description: 'Spicy, fruity and delicious',
+    region_id: 3,
+  },
+  {
+    name: 'Condensed Milk Rusks',
+    price: 5.50,
+    stock: 47,
+    origin_country: 'South Africa',
+    description: 'A filling bread treat to keep you sated',
+    region_id: 3,
+  },
+  {
+    name: 'Monkey Gland Sauce',
+    price: 8.89,
+    stock: 40,
+    origin_country: 'South Africa',
+    description: 'Fruity and spicy, this sauce has a lot to say.',
+    region_id: 3,
   },
   // europe
   {
@@ -115,7 +147,7 @@ const productData = [
     stock: 36,
     origin_country: 'Wales',
     description: 'What do you get when super-soft fudge meets the UKs creamiest spread? Pure, unmatched bliss.',
-    continent_id: 4,
+    region_id: 4,
   },
   {
     name: 'Strawberries & Cream Bonbons',
@@ -123,7 +155,7 @@ const productData = [
     stock: 24,
     origin_country: 'England',
     description: 'One taste, and youll see why Wimbledon attendees eat 60 tons of strawberries & cream every year.',
-    continent_id: 4,
+    region_id: 4,
   },
   {
     name: 'Onion Confit & Balsamic Vinegar Potato Chips',
@@ -131,7 +163,7 @@ const productData = [
     stock: 40,
     origin_country: 'France',
     description: 'A whole meal, but in a chip.',
-    continent_id: 4,
+    region_id: 4,
   },
   {
     name: '',
@@ -139,7 +171,7 @@ const productData = [
     stock: 35,
     origin_country: '',
     description: '',
-    continent_id: 4,
+    region_id: 4,
   },
   {
     name: '',
@@ -147,7 +179,7 @@ const productData = [
     stock: 20,
     origin_country: '',
     description: '',
-    continent_id: 4,
+    region_id: 4,
   },
 ];
 
