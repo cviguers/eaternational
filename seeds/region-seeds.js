@@ -11,8 +11,11 @@ const regionData = [
     name: 'Africa',
   },
   {
-    name: 'Australia',
+    name: 'Europe',
   },
+  {
+    name: 'Middle East',
+  }
 ];
 
 const seedRegion = () => Continent.bulkCreate(regionData);
