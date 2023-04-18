@@ -84,7 +84,7 @@ router.get('/product/:id', withAuth, async (req, res) => {
     // if err, throw err
   } catch (err) {
     console.log(err);
-    res.status(500).json(err);
+    res.status(400).json(err);
   }
 });
 
