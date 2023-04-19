@@ -165,24 +165,24 @@ const productData = [
     description: 'A whole meal, but in a chip.',
     region_id: 4,
   },
-  {
-    name: '',
-    price: ,
-    stock: 35,
-    origin_country: '',
-    description: '',
-    region_id: 4,
-  },
-  {
-    name: '',
-    price: ,
-    stock: 20,
-    origin_country: '',
-    description: '',
-    region_id: 4,
-  },
+//   {
+//     name: '',
+//     price: ,
+//     stock: 35,
+//     origin_country: '',
+//     description: '',
+//     region_id: 4,
+//   },
+//   {
+//     name: '',
+//     price: ,
+//     stock: 20,
+//     origin_country: '',
+//     description: '',
+//     region_id: 4,
+//   },
 ];
 
-const seedProduct = () => SnackType.bulkCreate(productData);
+const seedProduct = () => Product.bulkCreate(productData);
 
 module.exports = seedProduct;

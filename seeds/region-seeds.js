@@ -23,6 +23,6 @@ const regionData = [
   }
 ];
 
-const seedRegion = () => Continent.bulkCreate(regionData);
+const seedRegion = () => Region.bulkCreate(regionData);
 
 module.exports = seedRegion;
