@@ -7,12 +7,11 @@ const { Region } = require('../../models');
 const withAuth = require('../../utils/auth');
  
 // create new region on table
-router.post('/', withAuth, async (req, res) => {
+router.post('/', async (req, res) => {
     try {
       // call sequelize to create new region and hold variable
       const newRegion = await Region.create({
         ...req.body,
-        user_id: req.session.user_id,
       });
       // respond with  new region in json format   
       res.status(200).json(newRegion);
