@@ -4,7 +4,7 @@ const productData = [
   // latin america
   {
     name: 'Palito de Coco',
-    price: 2.50,
+    price: 2.5,
     stock: 50,
     origin_country: 'Dominican Republic',
     description: 'A coconut and caramel flavored lollipop wrapped in colorful cellophane',
@@ -20,7 +20,7 @@ const productData = [
   },
   {
     name: 'Galak',
-    price: 4.00,
+    price: 4.0,
     stock: 25,
     origin_country: 'Ecuador',
     description: 'These white chocolate bars are famous for their milky, melt in your mouth quality.',
@@ -28,24 +28,26 @@ const productData = [
   },
   {
     name: 'Ajonjoli',
-    price: 5.00,
+    price: 5.0,
     stock: 20,
     origin_country: 'Puerto Rico',
-    description: 'Imagine a mild and crunchy combination of sesame seeds and honey taking over your mouth and youll understand why these Puerto Rican snack bites are so popular.',
+    description:
+      'Imagine a mild and crunchy combination of sesame seeds and honey taking over your mouth and youll understand why these Puerto Rican snack bites are so popular.',
     region_id: 1,
   },
   {
     name: 'Galletas Doña Pepa',
-    price: 6.00,
+    price: 6.0,
     stock: 30,
     origin_country: 'Peru',
-    description: 'These simple vanilla cookies with a chocolate coating were created in tribute to the classic ~turrón de Doña Pepa~, a beloved pastry that has found its match in these less complicated, but crazy addictive treats! ',
+    description:
+      'These simple vanilla cookies with a chocolate coating were created in tribute to the classic ~turrón de Doña Pepa~, a beloved pastry that has found its match in these less complicated, but crazy addictive treats! ',
     region_id: 1,
   },
   // asia
   {
     name: 'Tikka Masala Corn Chips',
-    price: 5.00,
+    price: 5.0,
     stock: 40,
     origin_country: 'India',
     description: 'Think Doritos... but tikka masala flavored',
@@ -53,7 +55,7 @@ const productData = [
   },
   {
     name: 'Chicken Larb Flavored Seaweed Chips',
-    price: 4.50,
+    price: 4.5,
     stock: 15,
     origin_country: 'Thailand',
     description: 'Crisp Thai seaweed with spicy chicken flavor.',
@@ -61,24 +63,49 @@ const productData = [
   },
   {
     name: 'Mokomoko Mokolet Candy Toilet',
-    price: 6.00,
+    price: 6.0,
     stock: 20,
     origin_country: 'Japan',
-    description: ' Have you ever woke up one day and thought to yourself, what if I could eat a flavored candy or something out of a colorful toilet bowl?  Well somebody in Japan did, and it is a hit!',
+    description:
+      ' Have you ever woke up one day and thought to yourself, what if I could eat a flavored candy or something out of a colorful toilet bowl?  Well somebody in Japan did, and it is a hit!',
     region_id: 2,
   },
   {
     name: 'Wasabi Kit Kats',
-    price: 3.00,
+    price: 3.0,
     stock: 45,
     origin_country: 'China',
+    description: ' No that is not the green tea that are becoming more and more popular. That is wasabi flavored, and it taste awesome. ',
+    region_id: 2,
+  },
+  {
+    name: 'Kopiko Coffee Candy',
+    price: 3.0,
+    stock: 29,
+    origin_country: 'Japan',
+    description: ' Coffee candy sqaures with a strong flavor ',
+    region_id: 2,
+  },
+  {
+    name: 'Hot Garlic Shrimp Chips',
+    price: 2.5,
+    stock: 40,
+    origin_country: 'Japan',
+    description: ' Puffed wheat with flavored powder. ',
+    region_id: 2,
+  },
+  {
+    name: 'Samyang Buldak Kimchi Ramen',
+    price: 3.0,
+    stock: 17,
+    origin_country: 'South Korea',
     description: ' No that iss not the green tea that are becoming more and more popular. That is wasabi flavored, and it taste awesome. ',
     region_id: 2,
   },
   // africa
   {
     name: 'Original Squash Orange Juice',
-    price: 2.00,
+    price: 2.0,
     stock: 64,
     origin_country: 'South Africa',
     description: 'Juice from sweet orange, with lemon juice, sugar and water',
@@ -86,7 +113,7 @@ const productData = [
   },
   {
     name: 'Plantain Crunchy Chips',
-    price: 4.00,
+    price: 4.0,
     stock: 64,
     origin_country: 'Nigeria',
     description: 'Crispy, chewy, crunchy plantains in a convenient bag',
@@ -102,7 +129,7 @@ const productData = [
   },
   {
     name: 'Winegums',
-    price: 3.50,
+    price: 3.5,
     stock: 54,
     origin_country: 'South Africa',
     description: 'These delicious and tempting reimaginings of a genuine classic are sure to delight anyone with a sweet tooth. ',
@@ -126,7 +153,7 @@ const productData = [
   },
   {
     name: 'Condensed Milk Rusks',
-    price: 5.50,
+    price: 5.5,
     stock: 47,
     origin_country: 'South Africa',
     description: 'A filling bread treat to keep you sated',
@@ -143,7 +170,7 @@ const productData = [
   // europe
   {
     name: 'Clotted Cream Fudge',
-    price: 5.40,
+    price: 5.4,
     stock: 36,
     origin_country: 'Wales',
     description: 'What do you get when super-soft fudge meets the UKs creamiest spread? Pure, unmatched bliss.',
@@ -151,7 +178,7 @@ const productData = [
   },
   {
     name: 'Strawberries & Cream Bonbons',
-    price: 4.10,
+    price: 4.1,
     stock: 24,
     origin_country: 'England',
     description: 'One taste, and youll see why Wimbledon attendees eat 60 tons of strawberries & cream every year.',
@@ -159,28 +186,28 @@ const productData = [
   },
   {
     name: 'Onion Confit & Balsamic Vinegar Potato Chips',
-    price: 4.00,
+    price: 4.0,
     stock: 40,
     origin_country: 'France',
     description: 'A whole meal, but in a chip.',
     region_id: 4,
   },
-//   {
-//     name: '',
-//     price: ,
-//     stock: 35,
-//     origin_country: '',
-//     description: '',
-//     region_id: 4,
-//   },
-//   {
-//     name: '',
-//     price: ,
-//     stock: 20,
-//     origin_country: '',
-//     description: '',
-//     region_id: 4,
-//   },
+  //   {
+  //     name: '',
+  //     price: ,
+  //     stock: 35,
+  //     origin_country: '',
+  //     description: '',
+  //     region_id: 4,
+  //   },
+  //   {
+  //     name: '',
+  //     price: ,
+  //     stock: 20,
+  //     origin_country: '',
+  //     description: '',
+  //     region_id: 4,
+  //   },
 ];
 
 const seedProduct = () => Product.bulkCreate(productData);
