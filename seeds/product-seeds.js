@@ -257,6 +257,63 @@ const productData = [
     description: 'Sweet and salty black licorice with caramel center',
     region_id: 4,
   },
+  // middle east
+  {
+    name: 'Bissli BBQ Snack',
+    price: 10.49,
+    stock: 47,
+    origin_country: 'Israel',
+    description: 'A crunchy corkscrew with barbecue flavoring',
+    region_id: 5,
+  },
+  {
+    name: 'Fayrouz Pineapple',
+    price: 2.99,
+    stock: 50,
+    origin_country: 'Eygpt',
+    description: 'Non-Alchoholic pineapple flavord carbonated malt beverage',
+    region_id: 5,
+  },
+  {
+    name: 'Mughe Turkish Delight',
+    price: 35.9,
+    stock: 22,
+    origin_country: 'Turkey',
+    description: 'Turkish Delight, also known as lokum, loqum is an old Turkish dessert tradition.',
+    region_id: 5,
+  },
+  {
+    name: 'Namaki Cheese Snacks',
+    price: 6.99,
+    stock: 45,
+    origin_country: 'Iran',
+    description: 'Like Cheetos but better',
+    region_id: 5,
+  },
+  {
+    name: 'Ousi Tamarind Candy',
+    price: 4.99,
+    stock: 63,
+    origin_country: 'Syria',
+    description: 'Tamarind flavored toffee',
+    region_id: 5,
+  },
+  {
+    name: 'Rani Float Soda',
+    price: 2.99,
+    stock: 19,
+    origin_country: 'Saudi Arabia',
+    description: 'Fruit drink with real fruit pieces',
+    region_id: 5,
+  },
+  {
+    name: 'Tazah Maamoul Date Snacks',
+    price: 9.99,
+    stock: 30,
+    origin_country: 'Egypt',
+    description: 'Date Filled Shortbread Cookies',
+    region_id: 5,
+  },
 ];
 
 const seedProduct = () => SnackType.bulkCreate(productData);
