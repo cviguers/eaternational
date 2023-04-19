@@ -4,11 +4,10 @@ const { Region, Product } = require('../models');
 const withAuth = require('../utils/auth');
 
 // GET response for homepage-dicks handlebars
-router.get('/', withAuth, async (req, res) => {
+router.get('/', async (req, res) => {
   try {
     // render homepage handlebar if logged in
     res.render('home', {
-      loggedIn: req.session.loggedIn,
     });
     // if err, throw err
   } catch (err) {
