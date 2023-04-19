@@ -183,6 +183,6 @@ const productData = [
   },
 ];
 
-const seedProduct = () => Product.bulkCreate(productData);
+const seedProduct = () => SnackType.bulkCreate(productData);
 
 module.exports = seedProduct;
