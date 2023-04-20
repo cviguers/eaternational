@@ -3,7 +3,7 @@ const { Region, Product } = require('../models');
 // Import the custom middleware
 const withAuth = require('../utils/auth');
 
-// GET response for homepage handlebars
+// GET response for homepage-dicks handlebars
 router.get('/', async (req, res) => {
   try {
     // render homepage handlebar if logged in
@@ -13,7 +13,7 @@ router.get('/', async (req, res) => {
       const regions = dbRegionData.map((region) =>
       region.get({ plain: true })
       );
-    res.render('home', {
+    res.render('home', { 
       regions
     });
     // if err, throw err
