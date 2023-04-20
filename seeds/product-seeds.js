@@ -155,7 +155,7 @@ const productData = [
     price: 3.25,
     stock: 43,
     origin_country: 'South Africa',
-    description: 'South Africas original fruity, chewy and fizzy candy soda',
+    description: 'South Africas original fruity, chewy and fizzy candy',
     filename: 'sparletta_creme_soda_africa.jpg',
     region_id: 3,
   },
