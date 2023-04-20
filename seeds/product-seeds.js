@@ -1,4 +1,4 @@
-const { Product } = require('../models');
+const { Product } = require('../models'); 
 
 const productData = [
   // latin america
@@ -48,7 +48,7 @@ const productData = [
     region_id: 1,
   },
   {
-    name: 'Galletas Doña Pepa',
+    name: 'Portao de Cambui de Leite',
     price: 6.0,
     stock: 30,
     origin_country: 'Peru',
@@ -62,35 +62,35 @@ const productData = [
     price: 2.99,
     stock: 22,
     origin_country: 'Mexico',
-    description: 'Crunchy, sweet, delectable wafers for the whole family! ',
+    description: 'Crunchy, sweet, delectable wafers for the whole family!',
     filename: 'lacta_bis_wafer_candy.jpg',
     region_id: 1,
   },
   {
-    name: 'Antartica Soda',
+    name: 'Guarana Antartica Soda',
     price: 3.99,
     stock: 44,
     origin_country: 'Mexico',
-    description: 'Caramel bites to satisify to satisify your cravings',
+    description: 'cold as ice in a hot place',
     filename: 'guarana_antarctica_soda_south_america.jpg',
     region_id: 1,
   },
   // asia
   {
-    name: 'Tikka Masala Corn Chips',
+    name: 'Noodle Snack',
     price: 5.0,
     stock: 40,
-    origin_country: 'India',
-    description: 'Think ramen... but tikka masala flavored',
+    origin_country: 'South Korea',
+    description: 'Think ramen... but a little more mobile',
     filename: 'ottogi_ppushu_ppushu_noodle_snack_asia.jpg',
     region_id: 2,
   },
   {
-    name: 'Chicken Larb Seaweed Snack',
+    name: 'Squid Larb Seaweed Snack',
     price: 4.5,
     stock: 15,
     origin_country: 'Thailand',
-    description: 'Crisp Thai seaweed with spicy chicken flavor.',
+    description: 'Crisp Thai seaweed with spicy squid flavor.',
     filename: 'tao_kae_noi_super_crisp_asia.jpg',
     region_id: 2,
   },
@@ -105,7 +105,7 @@ const productData = [
     region_id: 2,
   },
   {
-    name: 'Masala Munch',
+    name: 'KureKure Masala Munch',
     price: 3.0,
     stock: 45,
     origin_country: 'China',
@@ -136,7 +136,7 @@ const productData = [
     price: 3.0,
     stock: 17,
     origin_country: 'South Korea',
-    description: ' No that iss not the green tea that are becoming more and more popular. That is wasabi flavored, and it taste awesome. ',
+    description: ' Ramen with a tangy twist ',
     filename: 'samyang_buldak_ramyeon_asia.jpg',
     region_id: 2,
   },
@@ -156,7 +156,7 @@ const productData = [
     stock: 43,
     origin_country: 'South Africa',
     description: 'South Africas original fruity, chewy and fizzy candy',
-    filename: 'sparletta_creme_soda_africa.jpg',
+    filename: 'beacon_fizzer_candy_africa.jpg',
     region_id: 3,
   },
   {
