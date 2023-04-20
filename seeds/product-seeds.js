@@ -148,7 +148,12 @@ const productData = [
     price: 3.25,
     stock: 43,
     origin_country: 'South Africa',
+<<<<<<< Updated upstream
     description: 'South Africas original fruity, chewy and fizzy candy',
+=======
+    description: 'South Africas original fruity, chewy and fizzy candy soda',
+    filename: 'beacon_fizzer_candy_africa.jpg',
+>>>>>>> Stashed changes
     region_id: 3,
   },
   {
