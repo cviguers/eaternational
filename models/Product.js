@@ -38,9 +38,15 @@ Product.init( // defining columns
       type: DataTypes.STRING,
       allowNull: false,
     },
+
+    // filename: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    // },
+    
     description: {
       type: DataTypes.STRING,
-      allowNull: false,      
+      allowNull: false,
     },
     region_id: {
       type: DataTypes.INTEGER,

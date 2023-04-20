@@ -7,7 +7,14 @@ const withAuth = require('../utils/auth');
 router.get('/', async (req, res) => {
   try {
     // render homepage handlebar if logged in
-    res.render('home', {
+    // call sequelize to find all regions
+    const dbRegionData = await Region.findAll();
+      // map out the selected data, without metadata
+      const regions = dbRegionData.map((region) =>
+      region.get({ plain: true })
+      );
+    res.render('home', { 
+      regions
     });
     // if err, throw err
   } catch (err) {
@@ -50,30 +57,27 @@ router.get('/regions', withAuth, async (req, res) => {
 
 // GET one region - - - i don't think we'll need this?
 // Use the custom middleware before allowing the user to access the region
-// router.get('/region/:id', withAuth, async (req, res) => {
-//   try {
-//     // call sequelize to find region by pk
-//     const dbRegionData = await Region.findByPk(req.params.id, {
-//       // include the region's name
-//       include: [
-//         {
-//           model: Region,
-//           attributes: [
-//             'name',
-//           ],
-//         },
-//       ],
-//     });
-//     // map out the selected data, without metadata
-//     const region = dbRegionData.get({ plain: true });
-//     // render region based on id if logged in
-//     res.render('region', { region, loggedIn: req.session.loggedIn });
-//   } catch (err) {
-//     // if err, throw err
-//     console.log(err);
-//     res.status(500).json(err);
-//   }
-// });
+router.get('/region/:id', async (req, res) => {
+  try {
+    // call sequelize to find region by pk
+    const dbProductData = await Product.findAll({where: {region_id: req.params.id}});
+
+    // map out the selected data, without metadata
+    const products = dbProductData.map((product) =>
+    product.get({ plain: true }));
+    // render region based on id if logged in
+    const dbRegionData = await Region.findAll();
+      // map out the selected data, without metadata
+    const regions = dbRegionData.map((region) =>
+    region.get({ plain: true })
+    );
+    res.render('products', { products, regions});
+  } catch (err) {
+    // if err, throw err
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
 
 // GET response all products from region
 router.get('/products', async (req, res) => {
