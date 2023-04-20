@@ -24,33 +24,17 @@ router.get('/', async (req, res) => {
   }
 });
 
-// GET response for all regions
+
+// GET response for checkout page
 router.get('/regions', async (req, res) => {
   try {
-    // call sequelize to find all regions
-    const dbRegionData = await Region.findAll({
-    // include the region model and only region name  
-      include: [
-        {
-          model: Region,
-          attributes: ['name'
-        ],
-        },
-      ],
-    });
-    // map out the selected data, without metadata
-    const regions = dbRegionData.map((region) =>
-    region.get({ plain: true })
-    );
-    // render homepage handlebar based on regions mapping if logged in
-    res.render('regions', {
-        regions,
-      // loggedIn: req.session.loggedIn,
+    // render checkout page
+    res.render('home', {
+      logged_in: req.session.logged_in
     });
     // if err, throw err
   } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
+    res.status(400).json(err);
   }
 });
 
@@ -131,6 +115,20 @@ router.get('/product/:id', async (req, res) => {
     res.status(400).json(err);
   }
 });
+
+// GET response for about page
+router.get('/about', async (req, res) => {
+  try {
+    // render checkout page
+    res.render('about', {
+      logged_in: req.session.logged_in
+    });
+    // if err, throw err
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
+
 
 // GET response for checkout page
 router.get('/checkout', async (req, res) => {
