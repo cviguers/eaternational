@@ -3,7 +3,7 @@ const { Region, Product } = require('../models');
 // Import the custom middleware
 const withAuth = require('../utils/auth');
 
-// GET response for homepage-dicks handlebars
+// GET response for homepage handlebars
 router.get('/', async (req, res) => {
   try {
     // render homepage handlebar if logged in
@@ -13,7 +13,7 @@ router.get('/', async (req, res) => {
       const regions = dbRegionData.map((region) =>
       region.get({ plain: true })
       );
-    res.render('home', { 
+    res.render('home', {
       regions
     });
     // if err, throw err
@@ -57,7 +57,7 @@ router.get('/regions', withAuth, async (req, res) => {
 
 // GET one region - - - i don't think we'll need this?
 // Use the custom middleware before allowing the user to access the region
-router.get('/region/:id', async (req, res) => {
+router.get('/region/:id', withAuth, async (req, res) => {
   try {
     // call sequelize to find region by pk
     const dbProductData = await Product.findAll({where: {region_id: req.params.id}});
@@ -71,7 +71,7 @@ router.get('/region/:id', async (req, res) => {
     const regions = dbRegionData.map((region) =>
     region.get({ plain: true })
     );
-    res.render('products', { products, regions});
+    res.render('products', { loggedIn: req.session.loggedIn, products, regions});
   } catch (err) {
     // if err, throw err
     console.log(err);
@@ -80,7 +80,7 @@ router.get('/region/:id', async (req, res) => {
 });
 
 // GET response all products from region
-router.get('/products', async (req, res) => {
+router.get('/products', withAuth, async (req, res) => {
   try {
     // call sequelize to find all products
     const dbProductData = await Product.findAll({
@@ -142,7 +142,7 @@ router.get('/product/:id', withAuth, async (req, res) => {
 });
 
 // GET response for checkout page
-router.get('/checkout', async (req, res) => {
+router.get('/checkout', withAuth, async (req, res) => {
   try {
     // render checkout page
     res.render('checkout', {
