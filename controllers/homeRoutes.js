@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const { log } = require('console');
 const { Region, Product } = require('../models');
 // Import the custom middleware
 const withAuth = require('../utils/auth');
@@ -119,21 +120,11 @@ router.get('/product/:id', async (req, res) => {
   try {
     // call sequelize to find product by pk
     const dbProductData = await Product.findByPk(req.params.id, {
-        include: [
-            {
-                model: Product,
-                attributes: [
-                    'name',
-                    'price',
-                    'description',
-                    'origin_country',
-                ]
-            }
-        ]
     });
     // render product without metadata if user is logged in
     const product = dbProductData.get({ plain: true });
-    res.render('product', { product });
+    console.log(product),
+    res.render('product-single', { ...product });
     // if err, throw err
   } catch (err) {
     console.log(err);
