@@ -323,3 +323,17 @@
     padding: 0;
   }
   
+
+  /* handlebars engage */
+
+  /* styles for the Latin America region view */
+.latin-america {
+  color: #333;
+  font-size: 16px;
+}
+
+/* additional styles for the Latin America region view */
+.latin-america h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
