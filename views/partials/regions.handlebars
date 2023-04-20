@@ -1,5 +1,9 @@
-<ul>
-    {{#each regions as |region|}}
-    {{> region-button}}
-    {{/each}}
-</ul>
+<div id="body">
+    <ul>
+        {{#each regions as |region|}}
+        {{#if region}}
+        {{> region-button}}
+        {{/if}}
+        {{/each}}
+    </ul>
+</div>

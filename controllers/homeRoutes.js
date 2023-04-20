@@ -14,6 +14,7 @@ router.get('/', async (req, res) => {
       const regions = dbRegionData.map((region) =>
       region.get({ plain: true })
       );
+      console.log(dbRegionData)
     res.render('home', { 
       regions
     });
