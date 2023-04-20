@@ -24,7 +24,7 @@ router.get('/', async (req, res) => {
 });
 
 // GET response for all regions
-router.get('/regions', withAuth, async (req, res) => {
+router.get('/regions', async (req, res) => {
   try {
     // call sequelize to find all regions
     const dbRegionData = await Region.findAll({
@@ -44,7 +44,7 @@ router.get('/regions', withAuth, async (req, res) => {
     // render homepage handlebar based on regions mapping if logged in
     res.render('regions', {
         regions,
-      loggedIn: req.session.loggedIn,
+      // loggedIn: req.session.loggedIn,
     });
     // if err, throw err
   } catch (err) {
@@ -57,7 +57,7 @@ router.get('/regions', withAuth, async (req, res) => {
 
 // GET one region - - - i don't think we'll need this?
 // Use the custom middleware before allowing the user to access the region
-router.get('/region/:id', withAuth, async (req, res) => {
+router.get('/region/:id', async (req, res) => {
   try {
     // call sequelize to find region by pk
     const dbProductData = await Product.findAll({where: {region_id: req.params.id}});
@@ -71,7 +71,7 @@ router.get('/region/:id', withAuth, async (req, res) => {
     const regions = dbRegionData.map((region) =>
     region.get({ plain: true })
     );
-    res.render('products', { loggedIn: req.session.loggedIn, products, regions});
+    res.render('products', { products, regions});
   } catch (err) {
     // if err, throw err
     console.log(err);
@@ -80,7 +80,7 @@ router.get('/region/:id', withAuth, async (req, res) => {
 });
 
 // GET response all products from region
-router.get('/products', withAuth, async (req, res) => {
+router.get('/products', async (req, res) => {
   try {
     // call sequelize to find all products
     const dbProductData = await Product.findAll({
@@ -104,7 +104,7 @@ router.get('/products', withAuth, async (req, res) => {
     // render products handlebar based on products mapping if logged in
     res.render('products', {
         products,
-      loggedIn: req.session.loggedIn,
+      // loggedIn: req.session.loggedIn,
     });
     // if err, throw err
   } catch (err) {
@@ -115,7 +115,7 @@ router.get('/products', withAuth, async (req, res) => {
 
 // GET response for one product
 // Use the custom middleware before allowing the user to access the product
-router.get('/product/:id', withAuth, async (req, res) => {
+router.get('/product/:id', async (req, res) => {
   try {
     // call sequelize to find product by pk
     const dbProductData = await Product.findByPk(req.params.id, {
@@ -133,7 +133,7 @@ router.get('/product/:id', withAuth, async (req, res) => {
     });
     // render product without metadata if user is logged in
     const product = dbProductData.get({ plain: true });
-    res.render('product', { product, loggedIn: req.session.loggedIn });
+    res.render('product', { product });
     // if err, throw err
   } catch (err) {
     console.log(err);
@@ -142,7 +142,7 @@ router.get('/product/:id', withAuth, async (req, res) => {
 });
 
 // GET response for checkout page
-router.get('/checkout', withAuth, async (req, res) => {
+router.get('/checkout', async (req, res) => {
   try {
     // render checkout page
     res.render('checkout', {

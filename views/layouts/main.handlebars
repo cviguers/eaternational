@@ -7,24 +7,6 @@
   <title>Eaternational - Snacks You've Probably Never Had Before</title>
   <link rel="stylesheet" href="https://use.typekit.net/wve8abv.css">
   <link rel="stylesheet" type="text/css" href="/css/style.css"> 
-  <script type="importmap-shim">
-  {"imports": {
-    "shopper/": "https://unpkg.com/shopper@0.2/",
-    "shopper": "https://unpkg.com/shopper@0.2/x/shopper.js"
-  }}
-	</script>
-	<script type="importmap-shim" src="https://unpkg.com/shopper@0.2/x/importmap-cloud.json"></script>
-
-	<script defer type=module-shim>
-	import "shopper/x/install-xiome-menu-system.js"
-	import "shopper/x/install-shopper.js"
-	</script>
-
-	<script defer src="https://unpkg.com/es-module-shims@1.5/dist/es-module-shims.wasm.js"></script>
-	<shopper-config
-	mock
-	base-currency="cad"
-	currencies="usd gbp eur"></shopper-config>
 </head>
 
 <body>
@@ -43,7 +25,7 @@
 				<a href="regions.html">regions</a>
 			</li>
 			<li>
-				<shopper-cart></shopper-cart>
+				<a href="cart.html">cart</a>
 			</li>
 		</ul>
 		<hr> 		
@@ -51,7 +33,7 @@
     <div id="body">
 		{{{body}}}
 		<ul>
-			<li>
+			{{!-- <li>
 				<a href="gallery.html">
 					<img src="/imgs/buttons/Button_1.png" alt="Button_1">
 					<span>Latin America</span>
@@ -80,7 +62,7 @@
 					<img src="/imgs/buttons/Button_5.png" alt="Button_5">
 					<span>Asia</span>
 				</a>
-			</li>
+			</li> --}}
 		</ul>
 	</div>
 	<div id="footer">
