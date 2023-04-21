@@ -32,6 +32,13 @@
 			<li>
 				<a href="/checkout">cart</a>
 			</li>
+			<li>
+				{{#if loggedIn}}
+				<button id="logout" class="btn-no-style">Logout</button>
+				{{else}}
+				<a href="/login">Login</a>
+				{{/if}}
+			</li>
 		</ul>
 		<hr> 		
 	</div>
@@ -48,6 +55,9 @@
 		<div>
 			<p>&copy; 2023 by Eaternational. All Rights Reserved</p>
 	</div>
+  {{#if loggedIn}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
 </body>
 
 </html>

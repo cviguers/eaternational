@@ -155,6 +155,17 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
+// Logout
+router.post('/logout', (req, res) => {
+  if (req.session.loggedIn) {
+    req.session.destroy(() => {
+      res.res('/')
+    });
+  } else {
+    res.status(404).end();
+  }
+});
+
 // GET response for about page
 router.get('/thankyou', async (req, res) => {
   try {
