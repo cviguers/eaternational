@@ -1,86 +1,4 @@
-  body {
-      font-family: "snicker", sans-serif;
-      font-weight: 700;
-      font-style: normal;
-      line-height: 1;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      min-width: 94vw;
-      justify-content: flex-start;
-    }
-    
-  p {
-    color: #f0b800;
-    line-height: 24px;
-    margin: 0;
-    padding: 0;
-  }
-  
-  p a {
-    color: #f0b800;
-    text-decoration: underline;
-  }
-  
-  p a:hover {
-    color: #f0b800;
-  }
-  
-  #header {
-    padding: 20px 0 10px;
-    text-align: center;
-    width: 100vw;
-  }
-  
-  #header a.logo {
-    display: flex;
-      justify-content: center;
-    margin: 0 auto;
-    padding: 0;
-    width: 74vw;
-  } 
-    /* top banner */
-  #header a.logo img {
-      border: 0;
-    display: flex;
-      justify-content: center;
-    margin: 0;
-      max-width: 60%;
-    }
-  
-  #header ul {
-    margin: 50px, auto;
-    padding: 30px 50px 0;
-      justify-content: left;
-  }
-  #header ul li {
-    display: inline;
-      justify-content: center;
-    margin: 60px;
-    list-style: none;
-    padding: 0px;
-  }
-  #header ul li a {
-    color: #f0b800;
-    display: inline-block;
-    font-family: "snicker", sans-serif;
-    font-size: 28px;
-    font-weight: normal;
-    margin: 0;
-    padding: 0px;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-  #header ul li a:hover, #header ul {
-    color: #dd9700;
-  }
-  #header hr {
-    border: 3px solid #dd9700;
-    width: 100%;
-  }
-  #body {
+#body {
     margin: 0;
     padding: 0 0 30px;
     text-align: center;
@@ -106,12 +24,7 @@
     padding: 0;
     width: 100vw;
   }
-  #body > div img {
-    object-position: left;
-    border: 2px solid #292929;
-    margin: 24px 0 0;
-    
-  }
+
   #body > div .article {
     margin: 0 auto;
     padding: 30px 30px 0;
@@ -144,18 +57,8 @@
   #body > div .article p {
     margin: 0 0 30px;
   }
-  #body div ul {
-    margin: 0;
-    padding: 24px 10px 0;
-    width: 90vw;
-  }
-  #body div ul li {
-    display: flex;
-    list-style: none;
-    margin: 0 0 13px;
-    overflow: hidden;
-    padding: 0;
-  }
+
+  
   #body div ul li .figure {
     border-right: 2px solid #1a1a1a;
     float: left;
@@ -163,21 +66,12 @@
     padding: 0;
     width: 376px;
   }
-  #body div ul li img {
-    border: 0;
-    display: block;
-    margin: 0;
-    padding: 0;
-    opacity: 0.8;
-    transition: 0.5s ease-in-out;
-  }
-  #body div ul li .figure:hover img {
-    opacity: 1;
-  }
+
+ 
   #body div ul li div {
     float: left;
     margin: 0;
-    padding: 63px 0 20px;
+    padding: 60px 20px 20px 60px;
     width: 558px;
   }
   #body div ul li div h3 {
@@ -260,40 +154,9 @@
     margin: 7px 0;
     padding: 12px 27px;
   }
-  #body > ul {
-    margin: 0 auto;
-    overflow: hidden;
-    justify-content: center;
-    padding: 24px 0 0;
-    width: 90vw;
-    display: flex;
-  }
-  #body > ul li {
-    display: inline-flex;
-    justify-content: center;
-    margin: 15px 10px 20px;
-    padding: auto;
-    width: 300px;
-  }
-  #body > ul li a {
-    color: #dd9700;
-    display: block;
-    font-family: "snicker", sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-  #body > ul li a img {
-    display: block;
-    margin: 0;
-    padding: 0;
-    opacity: .7;
-    transition: 0.5s ease-in-out;
-  }
+
+
+
   #body > ul li a:hover img {
     opacity: 3;
   }
@@ -324,9 +187,9 @@
   }
   
 
-  /* handlebars engage */
+/* handlebars engage */
 
-  /* styles for the Latin America region view */
+/* styles for the Latin America body view */
 .latin-america {
   color: #333;
   font-size: 16px;
@@ -337,47 +200,4 @@
   font-size: 24px;
   margin-bottom: 20px;
 }
-/* dingle product display styles */
-#body #single img {
-
-  border: 0;
-  display: block;
-  margin-left: 15%;
-  padding: 0;
-  width: 800px;
-  max-height: 640px;
-}
-#body #single div {
-  left: 65%;
-  margin-left: -480px;
-  margin-top: -171px;
-  padding: 0 0 0 300px;
-  position: absolute;
-  top: 50%;
-  text-align: left;
-  width: 530px;
-}
-#body #single div h2 {
-  background: #f0b800;
-  color: #ffffff;
-    border-radius: 15px;
-  display: inline-block;
-  font-family: "snicker", sans-serif;
-    letter-spacing: 1px;
-  font-size: 20px;
-  font-weight: normal;
-  margin: 67px 0px 10px 100px;
-  padding: 23px 27px 20px;
-  text-transform: uppercase;
-}
-#body #single div span {
-  background: #ffe4a9;
-    border-radius: 15px;
-  color: #292929;
-  display: block;
-  font-size: 20px;
-  letter-spacing: 1px;
-  line-height: 40px;
-  margin: 10px 0px 30px 100px;
-  padding: 12px 27px;
-}
+/* single product display styles */

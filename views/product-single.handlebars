@@ -1,23 +1,19 @@
-<div id="body">
 	<div id="single">
 	   <a href="/product/{{id}}">
 		<img src="/imgs/product/{{filename}}" alt="{{description}}">
 		<div>
 			<h2>Great choice!</h2>
 			<span>
-			<p>Name:</p>{{name}}
-			<p>Country:</p>{{origin_country}}
-			<p>Price:</p>{{price}}
-			<p>Stock:</p>{{stock}}
-			<p>Description:</p>{{description}}
+			<p>Name: <bold>{{name}}</bold> </p>
+			<p>Country: <bold>{{origin_country}}</bold> </p>
+			<p>Price: <bold>{{price}}</bold> </p>
+			<p>Stock: <bold> {{stock}}</bold></p>
+			<p>Description: <bold>{{description}}</bold></p>
 			</span>
-			
-			<span id="buy" onclick="count()">
-					Add to cart
-			</span>
+			<a href="/checkout" class="buy" onclick="clickCounter()"><span>Add to cart</span></a>
 		</div>
 	</div>
-</div>	
+
 
 {{> regions}}  
 

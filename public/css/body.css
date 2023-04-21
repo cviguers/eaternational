@@ -1,0 +1,38 @@
+body {
+  font-family: "snicker", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 94vw;
+  justify-content: flex-start;
+}
+
+a{
+  text-decoration: none;
+}
+p {
+color: #f0b800;
+line-height: 24px;
+margin: 0;
+padding: 0;
+}
+
+p a {
+color: #f0b800;
+text-decoration: underline;
+}
+
+p a:hover {
+color: #f0b800;
+}
+
+#header {
+padding: 20px 0 10px;
+text-align: center;
+width: 100vw;
+}
