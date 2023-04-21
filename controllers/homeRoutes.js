@@ -148,7 +148,7 @@ router.get('/checkout', withAuth, async (req, res) => {
 router.get('/login', (req, res) => {
     // if logged in, redirect to homepage
   if (req.session.loggedIn) {
-    res.redirect('/checkout');
+    res.render('checkout');
     return;
   }
   // if log in doesn't match, bring to log in page
