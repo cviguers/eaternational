@@ -120,9 +120,8 @@ router.get('/product/:id', async (req, res) => {
 // GET response for about page
 router.get('/about', async (req, res) => {
   try {
-    // render checkout page
+    // render about.hbars
     res.render('about', {
-      logged_in: req.session.logged_in
     });
     // if err, throw err
   } catch (err) {
@@ -132,27 +131,40 @@ router.get('/about', async (req, res) => {
 
 
 // GET response for checkout page
-router.get('/checkout', async (req, res) => {
-  try {
-    // render checkout page
-    res.render('checkout', {
-      logged_in: req.session.logged_in
-    });
-    // if err, throw err
-  } catch (err) {
-    res.status(400).json(err);
-  }
+router.get('/checkout', withAuth, async (req, res) => {
+      // If the user is logged in, allow them to view the checkout page
+      try {
+        // render checkout page
+        res.render('checkout', {
+          logged_in: req.session.logged_in
+        });
+        // if err, throw err
+      } catch (err) {
+        res.status(400).json(err);
+      }
 });
 
 // GET response login page
 router.get('/login', (req, res) => {
     // if logged in, redirect to homepage
   if (req.session.loggedIn) {
-    res.redirect('/');
+    res.redirect('/checkout');
     return;
   }
   // if log in doesn't match, bring to log in page
   res.render('login');
+});
+
+// GET response for about page
+router.get('/thankyou', async (req, res) => {
+  try {
+    // render about.hbars
+    res.render('thankyou', {
+    });
+    // if err, throw err
+  } catch (err) {
+    res.status(400).json(err);
+  }
 });
 
 module.exports = router;

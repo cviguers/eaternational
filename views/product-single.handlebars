@@ -10,10 +10,12 @@
 			<p>Stock: <bold> {{stock}}</bold></p>
 			<p>Description: <bold>{{description}}</bold></p>
 			</span>
-			
-			<a href="/checkout" class="buy"><span>Add to cart</span></a>
+			<a href="/checkout" class="buy" onclick="clickCounter()"><span>Add to cart</span></a>
 		</div>
 	</div>
 
 
-{{> regions}}
+{{> regions}}  
+
+{{!-- the path i built --}}
+<script src="/js/index.js"></script>

@@ -1,4 +1,4 @@
-// const User = require('./User');
+const User = require('./User');
 const Region = require('./Region');
 const Product = require('./Product');
 
@@ -10,4 +10,5 @@ Product.belongsTo(Region, {
   foreignKey: 'region_id',
 });
 
-module.exports = {Region, Product };
+
+module.exports = {Region, Product, User };
