@@ -8,7 +8,7 @@ const productData = [
     stock: 50,
     origin_country: 'Dominican Republic',
     description: 'A coconut and caramel flavored lollipop wrapped in colorful cellophane',
-    filename: 'palito_de_coco_south_America.jpg',
+    filename: 'palito_de_coco_south_America.png',
     region_id: 1,
   },
   {
@@ -26,7 +26,7 @@ const productData = [
     stock: 25,
     origin_country: 'Ecuador',
     description: 'These white chocolate bars are famous for their milky, melt in your mouth quality.',
-    filename: 'nestle_galak_south_america.jpg',
+    filename: 'nestle_galak_south_america.png',
     region_id: 1,
   },
   {
@@ -44,7 +44,7 @@ const productData = [
     stock: 20,
     origin_country: 'Puerto Rico',
     description: 'Imagine a mild and crunchy combination of sesame seeds and honey taking over your mouth and youll understand why these Puerto Rican snack bites are so popular.',
-    filename: 'dulce_ajonjoli_south_america.webp.jpg',
+    filename: 'dulce_ajonjoli_south_america.jpg',
     region_id: 1,
   },
   {
@@ -82,7 +82,7 @@ const productData = [
     stock: 40,
     origin_country: 'South Korea',
     description: 'Think ramen... but a little more mobile',
-    filename: 'ottogi_ppushu_ppushu_noodle_snack_asia.jpg',
+    filename: 'ottogi_ppushu_ppushu_noodle_snack_asia.jpeg',
     region_id: 2,
   },
   {
@@ -91,7 +91,7 @@ const productData = [
     stock: 15,
     origin_country: 'Thailand',
     description: 'Crisp Thai seaweed with spicy squid flavor.',
-    filename: 'tao_kae_noi_super_crisp_asia.jpg',
+    filename: 'tao_kae_noi_super_crisp_asia.jpeg',
     region_id: 2,
   },
   {
@@ -101,7 +101,7 @@ const productData = [
     origin_country: 'Japan',
     description:
       ' Have you ever woke up one day and thought to yourself- I NEED FRUIT and CANDY?  Well somebody in Japan did, and it is a hit!',
-    filename: 'puchao_fruit_candy_asia.jpg',
+    filename: 'puchao_fruit_candy_asia.jpeg',
     region_id: 2,
   },
   {
@@ -119,7 +119,7 @@ const productData = [
     stock: 29,
     origin_country: 'Japan',
     description: ' Coffee candy sqaures with a strong flavor ',
-    filename: 'kopiko_coffee_candy_asia.jpg',
+    filename: 'kopiko_coffee_candy_asia.jpeg',
     region_id: 2,
   },
   {
@@ -128,26 +128,26 @@ const productData = [
     stock: 40,
     origin_country: 'Japan',
     description: ' Puffed wheat with flavored powder. ',
-    filename: 'calbee_hot_garlic_shrimp_chips_asia.jpg',
+    filename: 'calbee_hot_garlic_shrimp_chips_asia.jpeg',
     region_id: 2,
   },
   {
-    name: 'Samyang Buldak Kimchi Ramen',
+    name: 'Samyang Buldak Ramen',
     price: 3.0,
     stock: 17,
     origin_country: 'South Korea',
     description: ' Ramen with a tangy twist ',
-    filename: 'samyang_buldak_ramyeon_asia.jpg',
+    filename: 'samyang_buldak_ramyeon_asia.jpeg',
     region_id: 2,
   },
   // africa
   {
-    name: 'Chicken Ginger Crunchy Chips',
+    name: 'Chicken Ginger Chips',
     price: 4.0,
     stock: 64,
     origin_country: 'Nigeria',
     description: 'Crispy, chewy, crunchy plantains in a convenient bag',
-    filename: 'sankofa_chicken_ginger_chips_africa.jpg',
+    filename: 'sankofa_chicken_ginger_chips_africa.jpeg',
     region_id: 3,
   },
   {
@@ -215,7 +215,7 @@ const productData = [
     region_id: 4,
   },
   {
-    name: 'Strawberries & Cream Bonbons',
+    name: 'Strawbarry Bonbons',
     price: 4.1,
     stock: 24,
     origin_country: 'England',
@@ -334,7 +334,7 @@ const productData = [
     region_id: 5,
   },
   {
-    name: 'Tazah Maamoul Date Snacks',
+    name: 'Maamoul Date Snacks',
     price: 9.99,
     stock: 30,
     origin_country: 'Egypt',
