@@ -3,7 +3,7 @@ Project 2
 # Eaternational
 
 ****
-![Website Screenshot](/public/P2_Screen%20Shot%20.png)
+![Website Screenshot](/public/P2_ScreenShot.png)
 
 ## Description
 
@@ -18,15 +18,15 @@ The tool relies on mySQL, Node and Express, handlebars and various other npms fo
 To use the tool, simply open this link in your browser of choice!
 
 *****
-![Eaternational](https://jsuttle2.github.io/P1-animal-fan-tool/)
+![Eaternational](https://quiet-scrubland-33972.herokuapp.com/)
 
 You will be land on our home page and be able to navigate from there. Please take a look at all the amazing products we have to offer!
 
 ## Contributors
 
 *****
-* [Caroline Viguers](https://github.com/Lohmarr)
-* [Colt Hammond](https://github.com/smiller422)
+* [Caroline Viguers](https://github.com/cviguers)
+* [Colt Hammond](https://github.com/chammond)
 * [Jameson Suttles](https://github.com/Jsuttle2)
 
 ## License
